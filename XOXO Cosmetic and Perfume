@@ -1,0 +1,746 @@
+using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.NetworkInformation;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OrderingOnline
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ordering XOXO Cosmetic and Perfume");
+            string products;
+            Console.Write("Good day! Choose a product; Cosmetics o Perfume. What would you like to order?: ");
+            products = Console.ReadLine();
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Good day, ");
+            Console.Write(name);
+            Console.WriteLine("!");
+
+            if (products == "Perfume")
+            {
+                Console.WriteLine("We have 3 variants of perfume: ");
+                string FreshScent;
+                Console.WriteLine("Fresh Scent");
+                string SweetScent;
+                Console.WriteLine("Sweet Scent");
+                string ExpensiveScent;
+                Console.WriteLine("Expensive Scent");
+                string sc;
+
+
+                Console.WriteLine("Welcome to XOXO Cosmetic and Perfume");
+                Console.Write("Can I take your order?: Answer Yes or No: ");
+                string order = Console.ReadLine();
+
+                Console.Write("What variants of scent would you like?: ");
+                sc = Console.ReadLine();
+                if (sc == "Fresh Scent")
+                {
+                    Console.WriteLine("All products are 105 pesos");
+                    string CucumberMelon;
+                    Console.WriteLine("Cucumber Melon");
+                    string JoMaloneNcetarineBlossom;
+                    Console.WriteLine("Jo Malone Nectarine Blossom");
+                    string Honey;
+                    Console.WriteLine("Honey");
+                    string AngelBreath;
+                    Console.WriteLine("Angel Breath");
+                    string DolceGabannaLightBlue;
+                    Console.WriteLine("Dolce Gabanna Light Blue");
+                    string MissDior;
+                    Console.WriteLine("Miss Dior");
+                    string RosyPearls;
+                    Console.WriteLine("Rosy Pearls");
+                    string JoMaloneLondonOrangeBlossom;
+                    Console.WriteLine("Jo Malone London Orange Blossom");
+                    string CologneCool;
+                    Console.WriteLine("Cologne Cool");
+                    string CoolWeather;
+                    Console.WriteLine("Cool Weather");
+                    string EliEverydayScent;
+                    Console.WriteLine("Eli Everyday Scent");
+                    string CleanWarmCotton;
+                    Console.WriteLine("Clean Warm Cotton");
+                    string BleuDeLi;
+                    Console.WriteLine("BlueDeLi");
+                    string Pradacandy;
+                    Console.WriteLine("Prada Candy");
+                    string purch;
+                    Console.Write("Please enter the perfume you would like to purchase: ");
+                    purch = Console.ReadLine();
+                    if (purch == "Cucumber Melon")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105 + "pesos.");
+                        Console.WriteLine("Thank you for your orders!");
+                    }
+                    else if (purch == "Jo Malone Nectarine Blossom")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Honey")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Angel Breath")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Dolce Gabanna Light Blue")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Miss Dior")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Rosy Pearls")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders!");
+                    }
+                    else if (purch == "Jo Malone London Orange Blossom")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Cologne Cool")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Cool Weather")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Eli Everyday Scent")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Clean Warm Cotton")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Blue De Li")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Prada Candy")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, we don't have that kind of perfume");
+                    }
+                }
+                else if (sc == "Sweet Scent")
+                {
+                    Console.WriteLine("All products are 125 pesos");
+                    string VanillaLace;
+                    Console.WriteLine("VanillA Lace");
+                    string Katyperry;
+                    Console.WriteLine("Katy Perry");
+                    string Bomshell;
+                    Console.WriteLine("Bomshell");
+                    string Pinkchiffon;
+                    Console.WriteLine("Pink Chiffon");
+                    string Cloud;
+                    Console.WriteLine("Cloud");
+                    string Cherryblossom;
+                    Console.WriteLine("Cherry Blossom");
+                    string Candyscent;
+                    Console.WriteLine("Candy Scent");
+                    string Fantasy;
+                    Console.WriteLine("Fantasy");
+                    string Blueberrylondon;
+                    Console.WriteLine("Blueberry London");
+                    string Lostcherry;
+                    Console.WriteLine("Lost Cherry");
+                    string Sweetlikecandy;
+                    Console.WriteLine("Sweet Like Candy");
+                    string Flowerbomb;
+                    Console.WriteLine("Flower bomb");
+                    string Secretlover;
+                    Console.WriteLine("Secret Lover");
+                    string purch;
+                    Console.Write("Please enter the perfume you would like to purchase: ");
+                    purch = Console.ReadLine();
+                    if (purch == "Vanilla Lace")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125 + "pesos.");
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Katy Perry")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Bomshell")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Pink Chiffon")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Cloud")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Cherry Blossom")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Candy Scent")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Fantasy")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Blueberry London")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 105);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Lost Cherry")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Sweet Like Candy")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Flower Bomb")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Secret Lover")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 125);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, we don't have that kind of perfume");
+                    }
+                }
+                else if (sc == "Expensive Scent")
+                {
+                    Console.WriteLine("All products are 150 pesos");
+                    string Bulgariamethyst;
+                    Console.WriteLine("Bulgari Amethyst");
+                    string Eclat;
+                    Console.WriteLine("Eclat");
+                    string Lacostepink;
+                    Console.WriteLine("Lacoste Pink");
+                    string Lacosteblue;
+                    Console.WriteLine("Lacoste Blue");
+                    string Jomaloneenglishpearfreesia;
+                    Console.WriteLine("Jo Malone English Pear Freesia");
+                    string Baccaratrouge540;
+                    Console.WriteLine("Baccarat Rouge 540");
+                    string Channelcoco;
+                    Console.WriteLine("Channel Coco");
+                    string Labolesanta;
+                    Console.WriteLine("Labo Le Santa");
+                    string Bloomorange;
+                    Console.WriteLine("Bloom Orange");
+                    string Guccideflora;
+                    Console.WriteLine("Gucci De Flora");
+                    string Mafiaboss;
+                    Console.WriteLine("Mafia Boss");
+                    string Roseluxe;
+                    Console.WriteLine("Rose Luxe");
+                    string AmorLisa;
+                    Console.WriteLine("Amor Lisa");
+                    string purch;
+                    Console.Write("Please enter the perfume you would like to purchase: ");
+                    purch = Console.ReadLine();
+                    if (purch == "Bulgari Amethyst")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Eclat")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Lacoste Pink")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Lacoste Blue")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Jo Malone English Pear Freesia")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Baccarat Rouge 540")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Channel Coco")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Labo Le Santa")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Bloom Orange")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Gucci De Flora")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Mafia Boss")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Rose Luxe")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (purch == "Amor Lisa")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be:" + hm * 150);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, we don't have that kind of perfume");
+                    }
+                }
+            }
+            else if (products == "Cosmetics")
+            {
+                Console.WriteLine("We have 3 variants of cosmetics: ");
+                string foundation;
+                Console.WriteLine("Foundation");
+                string LipBalm;
+                Console.WriteLine("Lip Balm");
+                string LipTint;
+                Console.WriteLine("Lip Tint");
+                string cosme;
+                Console.Write("Please choose what cosmetics you want: ");
+                cosme = Console.ReadLine();
+                if (cosme == "Foundation")
+                {
+                    Console.WriteLine("All products are 215");
+                    string Ivory;
+                    Console.WriteLine("Ivory");
+                    string Nudebeige;
+                    Console.WriteLine("Nude Beige");
+                    string Caramel;
+                    Console.WriteLine("Caramel");
+                    string Creambeige;
+                    Console.WriteLine("Cream Beige");
+                    string Softivory;
+                    Console.WriteLine("Soft Ivory");
+                    string Classicbeige;
+                    Console.WriteLine("Classic Beige");
+                    Console.WriteLine("Please enter the foundation you would like to purchase: ");
+                    cosme = Console.ReadLine();
+                    if (cosme == "Ivory")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Thank would be: " + hm * 215);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Nude Beige")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 215);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Caramel")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 215);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Cream Beige")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 215);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Soft Ivory")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 215);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Classic Beige")
+                    {
+                        int hm;
+                        Console.WriteLine("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 215);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, we dom't have that kind of foundation");
+                    }
+                }
+                else if (cosme == "Lip Balm")
+                {
+                    Console.WriteLine("All products are 95 pesos");
+                    string Nudepink;
+                    Console.WriteLine("Nude Pink");
+                    string Magicpink;
+                    Console.WriteLine("Magic Pink");
+                    string Brownorange;
+                    Console.WriteLine("Brown Orange");
+                    string Redbrown;
+                    Console.WriteLine("Red Brown");
+                    string Cosmetics;
+                    Console.Write("Please enter the Lip Balm you would like to purchase: ");
+                    cosme = Console.ReadLine();
+                    if (cosme == "Nude Pink")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 95);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Magic Pink")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 95);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Brown Orange")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 95);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Red Brown")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 95);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, we dom't have that kind of Lip balm");
+                    }
+                }
+                else if (cosme == "Lip Tint")
+                {
+                    Console.WriteLine("All products are 108 pesos");
+                    string Pink;
+                    Console.WriteLine("Pink");
+                    string Maroon;
+                    Console.WriteLine("Maroon");
+                    string Cherryred;
+                    Console.WriteLine("Cherry Red");
+                    string Peach;
+                    Console.WriteLine("Peach");
+                    string Orange;
+                    Console.WriteLine("Orange");
+                    string Red;
+                    Console.WriteLine("Red");
+                    string Violet;
+                    Console.WriteLine("Violet");
+                    string Wine;
+                    Console.WriteLine("Wine");
+                    string sunkissed;
+                    Console.WriteLine("Sun Kissed");
+                    string Nude;
+                    Console.WriteLine("Nude");
+                    string Cosmetics;
+                    Console.Write("Please enter the Lip Tint you would like to purchase: ");
+                    cosme = Console.ReadLine();
+                    if (cosme == "Nude Pink")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Maroon")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Cherry Red")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your ordes! ");
+                    }
+                    else if (cosme == "Peach")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Orange")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your ordres! ");
+                    }
+                    else if (cosme == "Red")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Violet")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Wine")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders");
+                    }
+                    else if (cosme == "Sun Kissed")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else if (cosme == "Nude")
+                    {
+                        int hm;
+                        Console.Write("How many pieces do you want?: ");
+                        hm = int.Parse(Console.ReadLine());
+                        Console.WriteLine("That would be: " + hm * 108);
+                        Console.WriteLine("Thank you for your orders! ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, we don't have that kind of Lip Tint");
+                    }
+                }
+                {
+
+                    Console.ReadLine();
+
+                }
+                Console.WriteLine("------------------------------------------------------------------------------------------");
+            }
+            Console.WriteLine("XOXO Cosmetic and Perfume Sub-Reseller form");
+            Console.ReadLine();
+            {
+                Console.Write("Please enter your full name: ");
+                string fullname = Console.ReadLine();
+                Console.Write("Please enter your phone number: ");
+                string phonenumber = Console.ReadLine();
+                Console.Write("Please enter your gmail account: ");
+                string gmailaccount = Console.ReadLine();
+                Console.Write("Please enter the date of your entry: ");
+                string date = Console.ReadLine();
+                Console.Write("Please enter 1,000 for your entry: ");
+                string entry = Console.ReadLine();
+                Console.WriteLine("Thank you for your entry and have a great day! ");
+                Console.ReadLine();
+            }
+        }
+    }
+}
